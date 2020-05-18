@@ -84,20 +84,26 @@ def transposition(msg, key, mode):
     return ret
 #Displays the result
 def main():
-    #Sets the key value
+    #set key values
     key = 12012
     
-    #Sets the message to encrypted
+    #Print out the plaintext
     msg = "TREASURE BOX IS BURRIED AT TWO HUNDRED FEET TO NORTH EAST AWAY FROM YOUR HOME"
     print('Original:%s' %msg.upper())
     
-    #Displays encryted message
+    #Writes encrypted file on 'encryption.txt' file 
     ciphertext = transposition(msg, key, ENC)
-    print('Ciphered:%s' %ciphertext)
+    filename = open('encryption.txt','wt+')
+    filename.write(ciphertext)
     
-    #Displays decrypted message
-    deciphertext = transposition(ciphertext, key, DEC)
-    print('Deciphered:%s' %deciphertext)
+    #Reads the content from 'encryption.txt'
+    filename = open('encryption.txt','rt')
+    content = filename.read()
+    
+    #Writes decrypted text on 'decryption.txt' file
+    deciphertext = transposition(content, key, DEC)
+    filename = open('decryption.txt','wt+')
+    filename.write(deciphertext)
     
 main()
         
