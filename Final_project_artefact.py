@@ -85,8 +85,8 @@ def transposition(msg, key, mode):
 #Displays the result
 def main():
     #set key values
-    key = 12012
-    
+    key = 12486
+   
     #Print out the plaintext
     msg = "ATTACKATDAWN"
     print('Original:%s' %msg.upper())
