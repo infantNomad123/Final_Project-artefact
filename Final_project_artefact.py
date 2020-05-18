@@ -88,7 +88,7 @@ def main():
     key = 12012
     
     #Print out the plaintext
-    msg = "ATTACK AT DAWN"
+    msg = "ATTACKATDAWN"
     print('Original:%s' %msg.upper())
     
     #Writes encrypted file on 'encryption.txt' file 
