@@ -50,7 +50,7 @@ def transposition(msg, key, mode):
 
         code = ['5', '2', '#', '8', '1', '3','4', '6', '0', '9', '*', '%', '=', '(', ')']
         random_code = random.choice(code)
-        filler = '0' * (keysize - msgsize%keysize)
+        filler = random_code * (keysize - msgsize%keysize)
 
         
 
