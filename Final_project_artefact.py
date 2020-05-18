@@ -88,7 +88,7 @@ def main():
     key = 12012
     
     #Print out the plaintext
-    msg = "TREASURE BOX IS BURRIED AT TWO HUNDRED FEET TO NORTH EAST AWAY FROM YOUR HOME"
+    msg = "ATTACK AT DAWN"
     print('Original:%s' %msg.upper())
     
     #Writes encrypted file on 'encryption.txt' file 
