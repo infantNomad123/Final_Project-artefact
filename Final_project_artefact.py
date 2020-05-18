@@ -1,20 +1,15 @@
 import random
-
 #Sets mode
 
 ENC =0
 DEC =1
 
-
-
 #creates key
-
 #The key values are constituted with numbers rather than alphabet
 
 def parseKey(key):        
 
     tmp = []
-
     for i, k in enumerate(str(key)):
         tmp.append((i,k))
 
