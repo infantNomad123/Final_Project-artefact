@@ -105,10 +105,10 @@ def transposition(msg, key, mode):
 def main():
 
     #set key values
-    key = 12012
+    key = 816532
    
     #Print out the plaintext
-    msg = "TREASUREBOXISBURRIEDATTWOHUNDREDFEETTONORTHEASTAWAYFROMYOURHOME"
+    msg = "ATTACKATDAWN"
     print('Original:%s' %msg.upper())
  
     #Writes encrypted file on 'encryption.txt' file
