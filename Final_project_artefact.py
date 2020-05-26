@@ -109,7 +109,7 @@ def main():
    
     #Print out the plaintext
     msg = "ATTACKATDAWN"
-    print('Original:%s' %msg.upper())
+    #print('Original:%s' %msg.upper())
  
     #Writes encrypted file on 'encryption.txt' file
     #Implements password authentication for encrypting text
